@@ -1,0 +1,204 @@
+html {
+  font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+
+  
+  
+  @font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/roboto-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  
+  header {
+    background-color: transparent;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: none;
+  }
+  
+  .menu {
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0s ease;
+    border-radius: 100px;
+  }
+  
+  .menu:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .menu svg path {
+    fill: #626262;
+  }
+  
+  .gmail-logo {
+    width: 109px;
+    height: 40px;
+    background-image: url('https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r5.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    margin-right: 10px;
+  }
+  
+  .search-form {
+    display: flex;
+    align-items: center;
+    order: 1;
+    position: relative;
+  }
+  
+  .search-input {
+    height: 36px;
+    width: 580px;
+    padding: 6px 6px 6px 54px; /* Adjusted padding to move the text to the right */
+    font-size: 16px;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+    background-color: #dfe9fa;
+    order: 2;
+    transition: background-color 0s ease;
+    box-shadow: none; /* Remove initial box-shadow */
+  }
+  
+  .search-input:focus {
+    background-color: #fff; /* Change background color when input is focused */
+    outline: none; /* Remove default focus outline */
+    animation: glow 1s infinite alternate; /* Add animation for glowing effect */
+  }
+  
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.4);
+    }
+    100% {
+      box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.4);
+    }
+  }
+  
+  
+  .search-button {
+    width: 36px;
+    height: 36px; /* Adjusted size to 36px x 36px */
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0s ease; /* Updated transition duration */
+    border-radius: 100px;
+    order: 0;
+    position: absolute;
+    left: 10px;
+  }
+  
+  .search-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-button svg {
+    width: 24px;
+    height: 24px;
+    fill: #626262;
+  }
+  
+  .search-input:focus {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1); /* Add a more faded black border on focus */
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  #emails {
+    margin-top: 20px;
+  }
+  
+  .email {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sender {
+color: #5e5e5e;
+  }
+  
+  .subject {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  
+  footer {
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+/* ... Previous CSS code ... */
+
+.filter-button {
+  width: 36px;
+  height: 36px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0s ease;
+  border-radius: 100px;
+  order: 3;
+  position: absolute;
+  right: 10px;
+}
+
+.filter-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.filter-button svg {
+  width: 24px;
+  height: 24px;
+  fill: #626262;
+}
+
+/* ... Remaining CSS code ... */
+
+.compose-button {
+  transition: all 0.1s ease; /* Specify the properties to transition and the duration */
+  background-color: #c2e7ff;
+  border-radius: 16px;
+  width: 135px;
+  height: 60px;
+  cursor: pointer;
+  font-size: 12px;
+  border: none;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+}
+
+.compose-button:hover {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5); /* Add a box shadow on hover */
+}
+
+.compose-button:active {
+  background-color: white;
+}

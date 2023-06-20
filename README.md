@@ -1,3 +1,4 @@
-# Gmail on GitHub
-Latest release
-I added a "." to "/mail/u/0/" since it would redirect you to "nate-games.github.io/mail/u/0/
+# Gmai
+Made for GitHub pages.
+## Who would make something that random?
+Yes me, but my mom said for me to make this.

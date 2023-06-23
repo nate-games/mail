@@ -1,4 +1,2 @@
-# Gmail
-Made for GitHub pages.
-## Who would make something that random?
-Yes me, but my mom said for me to make this.
+# Gmail <img src="https://cdn.worldvectorlogo.com/logos/official-gmail-icon-2020-.svg" width="40" style="vertical-align: middle;">
+Made for GitHub pages 

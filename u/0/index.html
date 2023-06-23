@@ -2,10 +2,14 @@
 <html>
 
 <head>
-  <script src="./js/changeColor.js"></script>
   <title>Inbox (1) - github@gmail.com</title>
   <link rel="icon" href="./img/favicon.ico">
   <link rel="stylesheet" type="text/css" href="./css/styles.css">
+  <style>
+    .search-results {
+      display: none;
+    }
+  </style>
 </head>
 
 <body>
@@ -16,8 +20,8 @@
     <a href="https://mail.google.com/mail/u/0/">
       <div class="gmail-logo" title="Gmail"></div>
     </a>
-    <form class="search-form">
-      <input type="text" placeholder="Search mail" class="search-input"
+    <form class="search-form" id="search-form">
+      <input type="text" id="search-input" placeholder="Search mail" class="search-input"
         style="color: #a3a3a3; font-family: Arial, Helvetica, sans-serif; margin-left: 55px;">
       <button type="submit" class="search-button" title="Search" style="margin-left: 55px">
         <svg focusable="false" height="36px" viewBox="0 0 24 24" width="36px" xmlns="http://www.w3.org/2000/svg">
@@ -46,7 +50,9 @@
   <main>
     <section id="emails">
       <div class="email">
-        <div style="font-weight: bold; margin-left: 60px;">Google Winners <img src="./img/verify.svg"><span style="font-weight: bold; margin-left: 10%;"> Congrats on your $1,000! -</span><span style="font-weight: normal;"> Since we cannot entirely give this we will pay you $0 a year!</span></div>
+        <div style="font-weight: bold; margin-left: 60px;">Google Winners <img src="./img/verify.svg"><span
+            style="font-weight: bold; margin-left: 10%;"> Congrats on your $1,000! -</span><span
+            style="font-weight: normal;"> Since we cannot entirely give this we will pay you $0 a year!</span>
       </div>
     </section>
   </main>
@@ -54,6 +60,26 @@
   <footer>
     © 2023 nate-games
   </footer>
+
+  <script>
+    document.getElementById("search-form").addEventListener("submit", function (event) {
+      event.preventDefault();
+      var searchInput = document.getElementById("search-input").value.toLowerCase();
+      var emails = document.querySelectorAll(".email");
+      var count = 0;
+      for (var i = 0; i < emails.length; i++) {
+        var emailContent = emails[i].innerText.toLowerCase();
+        if (emailContent.includes(searchInput)) {
+          emails[i].style.display = "block";
+          count++;
+        } else {
+          emails[i].style.display = "none";
+        }
+      }
+      var searchResults = document.getElementById("search-results");
+      searchResults.style.display = "none";
+    });
+  </script>
 </body>
 
 </html>

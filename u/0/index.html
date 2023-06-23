@@ -1,38 +1,59 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+  <script src="./js/changeColor.js"></script>
   <title>Inbox (1) - github@gmail.com</title>
   <link rel="icon" href="./img/favicon.ico">
   <link rel="stylesheet" type="text/css" href="./css/styles.css">
 </head>
+
 <body>
   <header>
     <button class="menu" title="Main Menu">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 20 20" fill="none">
-        <path fill="#b1b1b1" fill-rule="evenodd" d="M19 4a1 1 0 01-1 1H2a1 1 0 010-2h16a1 1 0 011 1zm0 6a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-1 7a1 1 0 100-2H2a1 1 0 100 2h16z"/>
-      </svg>
+      <img src="./img/menu.svg">
     </button>
-    <a href="https://mail.google.com/mail/u/0/"><div class="gmail-logo" title="Gmail"></div></a>
+    <a href="https://mail.google.com/mail/u/0/">
+      <div class="gmail-logo" title="Gmail"></div>
+    </a>
     <form class="search-form">
-      <input type="text" placeholder="Search mail" class="search-input" style="color: #a3a3a3; font-family: Arial, Helvetica, sans-serif;">
-      <button type="submit" class="search-button" title="Search">
+      <input type="text" placeholder="Search mail" class="search-input"
+        style="color: #a3a3a3; font-family: Arial, Helvetica, sans-serif; margin-left: 55px;">
+      <button type="submit" class="search-button" title="Search" style="margin-left: 55px">
         <svg focusable="false" height="36px" viewBox="0 0 24 24" width="36px" xmlns="http://www.w3.org/2000/svg">
-          <path d="M20.49,19l-5.73-5.73C15.53,12.2,16,10.91,16,9.5C16,5.91,13.09,3,9.5,3S3,5.91,3,9.5C3,13.09,5.91,16,9.5,16 c1.41,0,2.7-0.47,3.77-1.24L19,20.49L20.49,19z M5,9.5C5,7.01,7.01,5,9.5,5S14,7.01,14,9.5S11.99,14,9.5,14S5,11.99,5,9.5z"></path>
+          <path
+            d="M20.49,19l-5.73-5.73C15.53,12.2,16,10.91,16,9.5C16,5.91,13.09,3,9.5,3S3,5.91,3,9.5C3,13.09,5.91,16,9.5,16 c1.41,0,2.7-0.47,3.77-1.24L19,20.49L20.49,19z M5,9.5C5,7.01,7.01,5,9.5,5S14,7.01,14,9.5S11.99,14,9.5,14S5,11.99,5,9.5z">
+          </path>
           <path d="M0,0h24v24H0V0z" fill="none"></path>
         </svg>
       </button>
     </form>
   </header>
-  <button onclick="window.alert('Not YET functional.')" class="compose-button"><img src="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/edit/default/48px.svg" style="height: 27px; vertical-align: middle; margin-right: 10px;">Compose</button>
+
+  <button class="compose-button"><img
+      src="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/edit/default/48px.svg">Compose</button>
+
+  <div class="side-buttons">
+    <button><img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/inbox_fill_baseline_p900_20dp.png">Inbox
+      <a>1</a></button>
+    <button><img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/star_baseline_nv700_20dp.png">Starred</button>
+    <button><img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/schedule_baseline_nv700_20dp.png">Snoozed</button>
+    <button><img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/send_baseline_nv700_20dp.png">Sent</button>
+    <button><img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/draft_baseline_nv700_20dp.png">Drafts</button>
+    <button><img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/expand_more_baseline_nv700_20dp.png">More</button>
+  </div>
+
   <main>
     <section id="emails">
       <div class="email">
-        <div class="sender" style="font-size: 12px;">From: Google <img src="./img/verify.svg"> &lt;noreply@google.com&gt;</div><div style="font-weight: bold;">Google Winners - <span style="font-weight: normal;">Congrats on your $1,000,000! Since we cannot entirely give this we will pay you $0 a year!</span></div></div>          
+        <div style="font-weight: bold; margin-left: 60px;">Google Winners <img src="./img/verify.svg"><span style="font-weight: bold; margin-left: 10%;"> Congrats on your $1,000! -</span><span style="font-weight: normal;"> Since we cannot entirely give this we will pay you $0 a year!</span></div>
+      </div>
     </section>
   </main>
-  
+
   <footer>
     © 2023 nate-games
   </footer>
 </body>
+
 </html>

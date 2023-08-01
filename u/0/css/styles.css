@@ -13,6 +13,13 @@ html {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Google Sans';
+    src: url('/u/0/fonts/Google-Sans/GoogleSans-Black.woff') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 header {
     background-color: transparent;
     padding: px;

@@ -2,28 +2,27 @@
 <html>
 
 <head>
-  <title>Inbox (1) - github@gmail.com</title>
-  <link rel="icon" href="./img/favicon.ico">
-  <link rel="stylesheet" type="text/css" href="./css/styles.css">
-  <style>
-    .search-results {
-      display: none;
-    }
-  </style>
+    <title>Inbox (1) - github.io@gmail.com</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <style>
+        .search-results {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
-  <header>
-    <button class="menu" title="Main Menu">
-      <img src="./img/menu.svg">
+    <header>
+        <button class="menu" title="Main Menu">
+      <img src="img/menu.svg">
     </button>
-    <a href="https://mail.google.com/mail/u/0/">
-      <div class="gmail-logo" title="Gmail"></div>
-    </a>
-    <form class="search-form" id="search-form">
-      <input type="text" id="search-input" placeholder="Search mail" class="search-input"
-        style="color: #a3a3a3; font-family: Arial, Helvetica, sans-serif; margin-left: 55px;">
-      <button type="submit" class="search-button" title="Search" style="margin-left: 55px">
+        <a href="#inbox?button-clicked">
+            <div class="gmail-logo" title="Gmail"></div>
+        </a>
+        <form class="search-form" id="search-form">
+            <input type="text" id="search-input" placeholder="Search mail" class="search-input" style="color: rgba(0, 0, 0, 0.5); font-family: 'Google Sans', Arial, Helvetica, sans-serif; margin-left: 55px;">
+            <button type="submit" class="search-button" title="Search" style="margin-left: 55px">
         <svg focusable="false" height="36px" viewBox="0 0 24 24" width="36px" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M20.49,19l-5.73-5.73C15.53,12.2,16,10.91,16,9.5C16,5.91,13.09,3,9.5,3S3,5.91,3,9.5C3,13.09,5.91,16,9.5,16 c1.41,0,2.7-0.47,3.77-1.24L19,20.49L20.49,19z M5,9.5C5,7.01,7.01,5,9.5,5S14,7.01,14,9.5S11.99,14,9.5,14S5,11.99,5,9.5z">
@@ -31,55 +30,121 @@
           <path d="M0,0h24v24H0V0z" fill="none"></path>
         </svg>
       </button>
-    </form>
-  </header>
+        </form>
+    </header>
 
-  <button class="compose-button"><img
+    <button class="compose-button"><img
       src="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/edit/default/48px.svg">Compose</button>
 
-  <div class="side-buttons">
-    <button><img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/inbox_fill_baseline_p900_20dp.png">Inbox
+    <div class="side-buttons">
+        <button><img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/inbox_baseline_nv700_20dp.png">Inbox
       <a>1</a></button>
-    <button><img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/star_baseline_nv700_20dp.png">Starred</button>
-    <button><img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/schedule_baseline_nv700_20dp.png">Snoozed</button>
-    <button><img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/send_baseline_nv700_20dp.png">Sent</button>
-    <button><img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/draft_baseline_nv700_20dp.png">Drafts</button>
-    <button><img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/expand_more_baseline_nv700_20dp.png">More</button>
-  </div>
+        <button><img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/star_baseline_nv700_20dp.png">Starred</button>
+        <button><img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/schedule_baseline_nv700_20dp.png">Snoozed</button>
+        <button><img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/send_baseline_nv700_20dp.png">Sent</button>
+        <button><img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/draft_baseline_nv700_20dp.png">Drafts</button>
+        <button><img src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/expand_more_baseline_nv700_20dp.png">More</button>
+    </div>
 
-  <main>
-    <section id="emails">
-      <div class="email">
-        <div style="font-weight: bold; margin-left: 60px;">Google Winners <img src="./img/verify.svg"><span
-            style="font-weight: bold; margin-left: 10%;"> Congrats on your $1,000! -</span><span
-            style="font-weight: normal;"> Since we cannot entirely give this we will pay you $0 a year!</span>
-      </div>
-    </section>
-  </main>
+    <main>
+        <section id="emails">
+            <div class="email">
+                <div style="font-weight: bold; margin-left: 60px;">Google Winners <img src="img/verify.svg"><span style="font-weight: bold; margin-left: 10%;"> Congrats on your $1,000! -</span><span style="font-weight: normal;"> Since we cannot entirely give this we will pay you $0 a year!</span>
+                </div>
+        </section>
+    </main>
 
-  <footer>
-    © 2023 nate-games
-  </footer>
+    <footer>
+        © 2023 nate-games
+    </footer>
 
-  <script>
-    document.getElementById("search-form").addEventListener("submit", function (event) {
-      event.preventDefault();
-      var searchInput = document.getElementById("search-input").value.toLowerCase();
-      var emails = document.querySelectorAll(".email");
-      var count = 0;
-      for (var i = 0; i < emails.length; i++) {
-        var emailContent = emails[i].innerText.toLowerCase();
-        if (emailContent.includes(searchInput)) {
-          emails[i].style.display = "block";
-          count++;
-        } else {
-          emails[i].style.display = "none";
-        }
-      }
-      var searchResults = document.getElementById("search-results");
-      searchResults.style.display = "none";
-    });
-  </script>
+    <script>
+        document.getElementById("search-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var searchInput = document.getElementById("search-input").value.toLowerCase();
+            var emails = document.querySelectorAll(".email");
+            var count = 0;
+            for (var i = 0; i < emails.length; i++) {
+                var emailContent = emails[i].innerText.toLowerCase();
+                if (emailContent.includes(searchInput)) {
+                    emails[i].style.display = "block";
+                    count++;
+                } else {
+                    emails[i].style.display = "none";
+                }
+            }
+            var searchResults = document.getElementById("search-results");
+            searchResults.style.display = "none";
+        });
+    </script>
+    <div class="right-clicked">
+        <div id="contextMenu" class="context-menu" style="display:none">
+            <ul>
+                <li><a>Nothing to see here</a></li>
+            </ul>
+            <script>
+                document.onclick = hideMenu;
+                document.oncontextmenu = rightClick;
+
+                function hideMenu() {
+                    document.getElementById("contextMenu").style.display = "none";
+                }
+
+                function rightClick(e) {
+                    e.preventDefault();
+                    if (document.getElementById("contextMenu").style.display == "block")
+                        hideMenu();
+                    else {
+                        var menu = document.getElementById("contextMenu");
+                        menu.style.display = "block";
+                        menu.style.left = e.pageX + "px";
+                        menu.style.top = e.pageY + "px";
+                    }
+                }
+            </script>
+            <style>
+                .right-clicked {
+                    width: 100%;
+                    height: 100%;
+                    font-family: "Open Sans", sans-serif;
+                    padding: 0;
+                    margin: 0;
+                }
+                
+                .context-menu {
+                    position: fixed;
+                    z-index: 10000;
+                    width: 150px;
+                    background: #1b1a1a;
+                    border-radius: 5px;
+                }
+                
+                .context-menu ul {
+                    padding: 0px;
+                    margin: 0px;
+                    min-width: 150px;
+                    list-style: none;
+                }
+                
+                .context-menu ul li {
+                    padding: 8px 10px;
+                    font-size: 15px;
+                    color: #eee;
+                    cursor: pointer;
+                    border-radius: inherit;
+                }
+                
+                .context-menu ul li a {
+                    text-decoration: none;
+                    color: #eee;
+                }
+                
+                .context-menu ul li a:hover {
+                    background: #34343;
+                }
+            </style>
+        </div>
+    </div>
 </body>
 
 </html>
